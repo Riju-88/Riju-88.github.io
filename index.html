@@ -8,74 +8,76 @@
     
     
     
-  
+
     <!-- for hamburger icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  
-   
-   <style> /*** Loading bar CSS ***/
-    #load-cont{
-     position: relative;
-     /* z-index: 100; */
-     }
-     .hide{
-     visibility: hidden;
-     }
-     #load,#load>p{
-       position: fixed;
-       inset: 0;
-       display: flex;
-       height: 100vh;
-       width: 100vw;
-      
-       align-items: center;
-       justify-content: center;
-       background-color: #333333;
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <style>
+      /*** Loading bar CSS ***/
+      #load-cont {
+        position: relative;
+        /* z-index: 100; */
+      }
+      .hide {
+        visibility: hidden;
+      }
+      #load,
+      #load > p {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+
+        align-items: center;
+        justify-content: center;
+        background-color: #333333;
         transition: all 1s;
-     }
-     #load p{
-       color: white;
-       margin-top: 1rem;
-       transform: translateY(0.5rem);
-      
-     }
-     #load::after{
-       content: "";
-       height: 0.5rem;
-       width: 0;
-       transform: translateX(-100px);
-       background-color: white;
-       animation: loading 1.5s infinite ease-in;
-     /*  animation-direction: alternate;  */
-     }
-     @keyframes loading{
-       0%{
-         width: 0;
-       }
-       50%{
-         width: 6rem;
-       }
-       100%{
-         transform: translateX(100px);
-         width:0;  
-       }
-     }
-     /*** Loading bar CSS ***/</style>
-    <script type="module" crossorigin src="/assets/index-2b170c47.js"></script>
-    <link rel="stylesheet" href="/assets/index-5b8d68c6.css">
+      }
+      #load p {
+        color: white;
+        margin-top: 1rem;
+        transform: translateY(0.5rem);
+      }
+      #load::after {
+        content: "";
+        height: 0.5rem;
+        width: 0;
+        transform: translateX(-100px);
+        background-color: white;
+        animation: loading 1.5s infinite ease-in;
+        /*  animation-direction: alternate;  */
+      }
+      @keyframes loading {
+        0% {
+          width: 0;
+        }
+        50% {
+          width: 6rem;
+        }
+        100% {
+          transform: translateX(100px);
+          width: 0;
+        }
+      }
+      /*** Loading bar CSS ***/
+    </style>
+    <script type="module" crossorigin src="/assets/index-7e27f096.js"></script>
+    <link rel="stylesheet" href="/assets/index-ccdcf5a3.css">
   </head>
   <body>
     <div id="root"></div>
-      <!-- Loading bar HTML -->
+    <!-- Loading bar HTML -->
     <div id="load-cont">
       <div id="load">
         <p>Loading...</p>
       </div>
-      </div>
-      <!-- Loading bar HTML -->
-         <div id="cont" class="hide">
-          
-         </div>
+    </div>
+    <!-- Loading bar HTML -->
+    <div id="cont" class="hide"></div>
     
   </body>
 </html>
